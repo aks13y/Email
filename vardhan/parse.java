@@ -17,6 +17,10 @@ public class parse {
                 String boundary = "--0000000000002c980605e087c8b5";
                 if(data.equals(boundary)){
                     flag = flag + 1;
+                    if(flag==2)
+                    {
+                        break;
+                    }
                     continue;
                 }
                 if(flag == 1){
